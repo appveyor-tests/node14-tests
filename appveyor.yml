@@ -11,9 +11,11 @@ install:
 - ps: Start-Sleep -s 5; Restart-Computer
 - ps: Start-Sleep -s 5
 - appveyor version
-#- ps: Start-Sleep -s 600
 
 build: off
 
 test_script:
 - test.cmd
+
+on_failure:
+- ps: Start-Sleep -s 600

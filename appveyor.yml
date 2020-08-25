@@ -4,6 +4,10 @@ environment:
   nodejs_version: 14
   platform: x86
 
+install:
+- setx APPVEYOR_BUILD_AGENT_LATEST_VERSION_TEST %APPVEYOR_BUILD_AGENT_LATEST_VERSION_TEST% /m
+- setx APPVEYOR_BUILD_AGENT_LATEST_URL_TEST %APPVEYOR_BUILD_AGENT_LATEST_URL_TEST% /m
+
 build: off
 
 test_script:

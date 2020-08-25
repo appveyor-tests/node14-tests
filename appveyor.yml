@@ -1,0 +1,8 @@
+environment:
+  nodejs_version: 14
+  platform: x86
+
+build: off
+
+test_script:
+- test.cmd

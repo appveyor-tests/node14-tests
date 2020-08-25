@@ -5,8 +5,8 @@ environment:
   platform: x86
 
 install:
-- ps: "[Environment]::SetEnvironmentVariable('APPVEYOR_BUILD_AGENT_LATEST_VERSION_TEST', '6.3.2.2919', 'Machine')"
-- ps: "[Environment]::SetEnvironmentVariable('APPVEYOR_BUILD_AGENT_LATEST_URL_TEST', 'https://github.com/appveyor/ci/releases/download/build-agent-v6.3.2%2B2919/AppveyorBuildAgent.zip', 'Machine')"
+- ps: "[Environment]::SetEnvironmentVariable('APPVEYOR_BUILD_AGENT_LATEST_VERSION_TEST', '6.3.2.2920', 'Machine')"
+- ps: "[Environment]::SetEnvironmentVariable('APPVEYOR_BUILD_AGENT_LATEST_URL_TEST', 'https://github.com/appveyor/ci/releases/download/build-agent-v6.3.2%2B2920/AppveyorBuildAgent.zip', 'Machine')"
 - appveyor version
 - ps: Start-Sleep -s 5; Restart-Computer
 - ps: Start-Sleep -s 5

@@ -7,6 +7,10 @@ environment:
 install:
 - setx APPVEYOR_BUILD_AGENT_LATEST_VERSION_TEST %APPVEYOR_BUILD_AGENT_LATEST_VERSION_TEST% /m
 - setx APPVEYOR_BUILD_AGENT_LATEST_URL_TEST %APPVEYOR_BUILD_AGENT_LATEST_URL_TEST% /m
+- appveyor version
+- ps: Start-Sleep -s 5; Restart-Computer
+- ps: Start-Sleep -s 5
+- appveyor version
 
 build: off
 

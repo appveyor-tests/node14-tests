@@ -2,7 +2,7 @@ image: Visual Studio 2019
 
 environment:
   nodejs_version: 14
-  platform: 'x86'
+  platform: ''
 
 install:
 #- ps: "[Environment]::SetEnvironmentVariable('APPVEYOR_BUILD_AGENT_LATEST_VERSION_TEST', '6.3.2.2920', 'Machine')"

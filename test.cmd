@@ -9,6 +9,7 @@ ECHO platform^: %platform%
 ECHO downloading/installing node
 powershell Install-Product node $env:nodejs_version $env:platform
 rem powershell Update-NodeJsInstallation 14.8.0 x64
+where node
 IF %ERRORLEVEL% NEQ 0 GOTO ERROR
 
 set iterations=500
